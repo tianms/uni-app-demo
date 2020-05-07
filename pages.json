@@ -1,0 +1,157 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/demo/demo",
+			"style" : {
+				"navigationBarTitleText":"view和text组件学习页面"
+			}
+		},
+		{
+            "path" : "pages/index/index",
+            "style" : {
+				// app配置
+				"app-plus": {
+					// 滚动条，none:不显示
+					"scrollIndicator":"none",
+					// 顶部导航栏
+					"titleNView": {
+						// 搜索框
+						"searchInput": {
+							"align": "center", // 搜索文字，居中
+							"backgroundColor": "#F7F7F7", // 背景色
+							"borderRadius": "4px", // 圆角
+							"placeholder": "搜索糗事", // 提示文本
+							"placeholderColor": "#CCCCCC", // 提示文本颜色
+							"disabled": true
+						},
+						// 配置图片
+						"buttons": [
+							// 左边
+							{
+								"color": "#FF9619",
+								"colorPressed": "#BBBBBB",
+								"float": "left",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue609" // 文字对应路径里的文字:\u + 文字编号
+							},
+							// 右边
+							{
+								"color": "#FF9619",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue653" // 文字对应路径里的文字:\u + 文字编号
+							}
+						]
+					}
+				}
+			}
+        },
+		{
+            "path" : "pages/news/news",
+            "style" : {
+            	"app-plus": {
+            		
+            	}
+            }
+        },
+		{
+			"path" : "pages/paper/paper",
+			"style" : {
+			   "app-plus": {
+			   	
+			   }
+			}
+        },
+		{
+            "path" : "pages/home/home",
+			"style" : {
+				"app-plus": {
+					
+				}
+			}
+        },
+		{
+            "path" : "pages/search/search",
+            "style" : {
+				"app-plus": {
+					// 滚动条，none:不显示
+					"scrollIndicator":"none",
+					// 顶部导航栏
+					"titleNView": {
+						"autoBackButton": false, // 原生返回按钮不显示
+						// 搜索框
+						"searchInput": {
+							"align": "left", // 搜索文字，居中
+							"backgroundColor": "#F7F7F7", // 背景色
+							"borderRadius": "4px", // 圆角
+							"placeholder": "搜索糗事", // 提示文本
+							"placeholderColor": "#CCCCCC", // 提示文本颜色
+							"disabled": false
+						},
+						// 配置图片
+						"buttons": [
+							// 右边
+							{
+								"color": "#000000",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "16px",
+								"text": "取消"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/msg/msg",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "社区----",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	// 底部导航内容
+	"tabBar": {
+		"color": "#323232", // 未选中的字体颜色
+		"selectedColor": "#ED6384", // 选中状态下的颜色
+		"borderStyle": "black", // 上边线的颜色
+		"backgroundColor": "#FFFFFF", // 背景色
+		"list": [ // 底部选项卡的列表
+			{
+				"pagePath": "pages/index/index",
+				"iconPath":"./static/img/tabbar/index.png",
+				"selectedIconPath":"./static/img/tabbar/indexed.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/news/news",
+				"iconPath":"./static/img/tabbar/news.png",
+				"selectedIconPath":"./static/img/tabbar/newed.png",
+				"text": "动态"
+			},
+			{
+				"pagePath": "pages/msg/msg",
+				"iconPath":"./static/img/tabbar/paper.png",
+				"selectedIconPath":"./static/img/tabbar/papered.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath":"./static/img/tabbar/home.png",
+				"selectedIconPath":"./static/img/tabbar/homeed.png",
+				"text": "我的"
+			}
+		]
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "index-list": "/components/index/index-list",
+    "swiper-tab-head": "/components/swiperTab/swiper-tab-head",
+    "pull-on-load": "/components/common/pull-on-load",
+    "no-thing": "/components/common/no-thing"
+  }
+}

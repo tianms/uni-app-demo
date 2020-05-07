@@ -1,0 +1,66 @@
+/** 内容布局 */
+.base_data {
+	padding: 20upx;
+	border-bottom: 1upx solid #EEEEEE;
+}
+.base_data>view {
+	margin: 10upx 0;
+}
+
+/** 用户信息部分 */
+.bd_user>view:first-child image {
+	width: 85upx;
+	height: 85upx;
+	border-radius: 100%;
+	margin-right: 10upx;
+}
+.bd_user>view:last-child {
+	background: #F7F2F5;
+	padding: 0 10upx;
+}
+
+/** 标题 */
+.bd_title {
+	font-size: 32upx;
+}
+
+/** 图片 */
+.bd_img {
+	position: relative;
+}
+
+.bd_img image {
+	width: 100%;
+	border-radius: 20upx;
+}
+.bd_img_play {
+	position: absolute;
+	font-size: 140upx;
+	color: #FFFFFF;
+}
+.bd_img_play_info {
+	position: absolute;
+	background: rgb(88,96,66);
+	color: #FFFFFF;
+	border-radius: 30upx;
+	bottom: 8upx;
+	right: 8upx;
+	padding: 0 15upx;
+}
+
+/** 操作区 */
+.bd_handle>view>view {
+	font-size: 28upx;
+	padding: 0 5upx;
+}
+.bd_handle>view>view>view:first-child {
+	margin-right: 10upx;
+}
+.bd_handle>view>view>view {
+	font-size: 35upx;
+}
+
+/** 选中,针对点赞和踩 */
+.active {
+	color: #B9FD00;
+}

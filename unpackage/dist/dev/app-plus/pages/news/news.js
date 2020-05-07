@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"box .",[1],"_img { width: 100%; border-radius: ",[0,20],"; position: relative; }\n",],undefined,{path:"./pages/news/news.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/news/news.wxml') } }));

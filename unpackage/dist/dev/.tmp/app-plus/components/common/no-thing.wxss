@@ -1,0 +1,13 @@
+
+.no-thing.data-v-05f5c904 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.no-thing image.data-v-05f5c904 {
+	width: 40%;
+	/* height: 100%; */
+}
+

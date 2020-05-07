@@ -1,0 +1,192 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** 引入css */
+/** 内容布局 */
+.base_data.data-v-06645164 {
+	padding: 20rpx;
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.base_data>view.data-v-06645164 {
+	margin: 10rpx 0;
+}
+/** 用户信息部分 */
+.bd_user>view:first-child image.data-v-06645164 {
+	width: 85rpx;
+	height: 85rpx;
+	border-radius: 100%;
+	margin-right: 10rpx;
+}
+.bd_user>view.data-v-06645164:last-child {
+	background: #F7F2F5;
+	padding: 0 10rpx;
+}
+/** 标题 */
+.bd_title.data-v-06645164 {
+	font-size: 32rpx;
+}
+/** 图片 */
+.bd_img.data-v-06645164 {
+	position: relative;
+}
+.bd_img image.data-v-06645164 {
+	width: 100%;
+	border-radius: 20rpx;
+}
+.bd_img_play.data-v-06645164 {
+	position: absolute;
+	font-size: 140rpx;
+	color: #FFFFFF;
+}
+.bd_img_play_info.data-v-06645164 {
+	position: absolute;
+	background: rgb(88,96,66);
+	color: #FFFFFF;
+	border-radius: 30rpx;
+	bottom: 8rpx;
+	right: 8rpx;
+	padding: 0 15rpx;
+}
+/** 操作区 */
+.bd_handle>view>view.data-v-06645164 {
+	font-size: 28rpx;
+	padding: 0 5rpx;
+}
+.bd_handle>view>view>view.data-v-06645164:first-child {
+	margin-right: 10rpx;
+}
+.bd_handle>view>view>view.data-v-06645164 {
+	font-size: 35rpx;
+}
+/** 选中,针对点赞和踩 */
+.active.data-v-06645164 {
+	color: #B9FD00;
+}
+

@@ -1,0 +1,21 @@
+/** flex布局 */
+.my-f, .my-f-ai, .my-f-jc-sb, .my-f-jc-c, .my-f-ai-jc-c, .my-f-ai-jc-sb {
+	display: flex;
+}
+.my-f-ai, .my-f-ai-jc-c, .my-f-ai-jc-sb {
+	align-items: center;
+}
+.my-f-jc-sb, .my-f-ai-jc-sb {
+	justify-content: space-between;
+}
+.my-f-jc-c, .my-f-ai-jc-c {
+	justify-content: center;
+}
+/** flex布局 */
+
+/** 文字样式 */
+.my-font {
+	color: #9F9DA0;
+}
+
+/** 文字样式 */

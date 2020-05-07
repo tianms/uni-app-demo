@@ -1,0 +1,21 @@
+
+.uni-tab-bar {
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.swiper-tab-list {
+	font-weight: bold;
+	color: #959394;
+}
+/** 选中的字体颜色改变 */
+.uni-tab-bar .active {
+	color: #140D0F;
+}
+/** 选中的标签下方 */
+.active .tab-item-active {
+	border-top: 6rpx solid #FDDA30;
+	border-bottom: 6rpx solid #FDDA30;
+	border-radius: 50rpx;
+	width: 80rpx;
+	margin: 0 auto;
+}
+

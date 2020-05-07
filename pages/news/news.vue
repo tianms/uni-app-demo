@@ -1,0 +1,36 @@
+<template>
+	<view class="box">
+		动态页
+		<image
+			src="../../static/img/index/background.jpg" 
+			mode="widthFix" 
+			lazy-load
+		>
+		</image>
+		<view class="icon iconfont icon-bofang bd_img_play"></view>
+		<view class="bd_img_play_info">
+			20w次播放 2:47
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+	.box img {
+		width: 100%;
+		border-radius: 20upx;
+		position: relative;
+	}
+</style>

@@ -1,0 +1,7 @@
+
+.box ._img {
+	width: 100%;
+	border-radius: 20rpx;
+	position: relative;
+}
+
