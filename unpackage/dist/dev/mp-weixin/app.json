@@ -3,38 +3,42 @@
     "pages/index/index",
     "pages/news/news",
     "pages/paper/paper",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/search/search",
+    "pages/add-input/add-input",
+    "pages/topic-nav/topic-nav",
+    "pages/topic-detail/topic-detail"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "咦-这是啥",
+    "navigationBarTitleText": "仿糗事百科",
     "navigationBarBackgroundColor": "#FFFFFF",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {
-    "color": "#333333",
-    "selectedColor": "#f06c7a",
+    "color": "#323232",
+    "selectedColor": "#ED6384",
     "borderStyle": "black",
     "backgroundColor": "#FFFFFF",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "./static/img/tabbar/home.png",
-        "selectedIconPath": "./static/img/tabbar/homeed.png",
+        "iconPath": "./static/img/tabbar/index.png",
+        "selectedIconPath": "./static/img/tabbar/indexed.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/news/news",
         "iconPath": "./static/img/tabbar/news.png",
-        "selectedIconPath": "./static/img/tabbar/newsed.png",
+        "selectedIconPath": "./static/img/tabbar/newed.png",
         "text": "动态"
       },
       {
         "pagePath": "pages/paper/paper",
         "iconPath": "./static/img/tabbar/paper.png",
         "selectedIconPath": "./static/img/tabbar/papered.png",
-        "text": "小纸条"
+        "text": "消息"
       },
       {
         "pagePath": "pages/home/home",

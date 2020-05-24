@@ -1,11 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path" : "pages/demo/demo",
-			"style" : {
-				"navigationBarTitleText":"view和text组件学习页面"
-			}
-		},
+		// {
+		// 	"path" : "pages/demo/demo",
+		// 	"style" : {
+		// 		"navigationBarTitleText":"view和text组件学习页面"
+		// 	}
+		// },
+		// 首页
 		{
             "path" : "pages/index/index",
             "style" : {
@@ -13,6 +14,7 @@
 				"app-plus": {
 					// 滚动条，none:不显示
 					"scrollIndicator":"none",
+					"bounce":"none", // 关闭反弹效果，针对上拉和下拉
 					// 顶部导航栏
 					"titleNView": {
 						// 搜索框
@@ -49,14 +51,18 @@
 				}
 			}
         },
+		// 动态页
 		{
             "path" : "pages/news/news",
             "style" : {
             	"app-plus": {
-            		
+            		// 禁止原生导航
+            		"titleNView": false,
+					"bounce":"none" // 关闭反弹效果，针对上拉和下拉
             	}
             }
         },
+		// 消息页
 		{
 			"path" : "pages/paper/paper",
 			"style" : {
@@ -65,6 +71,7 @@
 			   }
 			}
         },
+		// 我的页
 		{
             "path" : "pages/home/home",
 			"style" : {
@@ -73,6 +80,7 @@
 				}
 			}
         },
+		// 搜索页
 		{
             "path" : "pages/search/search",
             "style" : {
@@ -91,7 +99,7 @@
 							"placeholderColor": "#CCCCCC", // 提示文本颜色
 							"disabled": false
 						},
-						// 配置图片
+						// 配置按钮
 						"buttons": [
 							// 右边
 							{
@@ -105,19 +113,51 @@
 					}
 				}
 			}
-        }
-        ,{
-            "path" : "pages/msg/msg",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/my/my",
-            "style" : {}
+        },
+		// 发布页
+		{
+            "path" : "pages/add-input/add-input",
+            "style" : {
+				"app-plus": {
+					// 禁止原生导航
+					"titleNView": false
+				}
+			}
+        },
+		// 话题分类
+		{
+            "path" : "pages/topic-nav/topic-nav",
+            "style" : {
+				"navigationBarTitleText":"话题分类",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        },
+		// 话题详情页
+		{
+            "path" : "pages/topic-detail/topic-detail",
+            "style" : {
+				// 官网->配置->pages.json->pages->style
+				"enablePullDownRefresh": true, // 开启下拉刷新
+				"app-plus": {
+					"bounce":"none",
+					"scrollIndicator": "none", // 隐藏滚动条
+					"titleNView": {
+						"type": "transparent", // 渐变
+						"buttons": [
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+			}
         }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "社区----",
+		"navigationBarTitleText": "仿糗事百科",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF"
 	},
@@ -141,13 +181,13 @@
 				"text": "动态"
 			},
 			{
-				"pagePath": "pages/msg/msg",
+				"pagePath": "pages/paper/paper",
 				"iconPath":"./static/img/tabbar/paper.png",
 				"selectedIconPath":"./static/img/tabbar/papered.png",
 				"text": "消息"
 			},
 			{
-				"pagePath": "pages/my/my",
+				"pagePath": "pages/home/home",
 				"iconPath":"./static/img/tabbar/home.png",
 				"selectedIconPath":"./static/img/tabbar/homeed.png",
 				"text": "我的"

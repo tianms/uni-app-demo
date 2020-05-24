@@ -95,6 +95,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   onLaunch: function onLaunch() {
     console.log('App Launch');
+    // 检测更新
+    // 网络监听
+    // 初始化数据
   },
   onShow: function onShow() {
     console.log('App Show');

@@ -2,12 +2,15 @@
 .my-f, .my-f-ai, .my-f-jc-sb, .my-f-jc-c, .my-f-ai-jc-c, .my-f-ai-jc-sb {
 	display: flex;
 }
+/* flex布局,纵向居中 */
 .my-f-ai, .my-f-ai-jc-c, .my-f-ai-jc-sb {
 	align-items: center;
 }
+/* flex布局,横向靠边 */
 .my-f-jc-sb, .my-f-ai-jc-sb {
 	justify-content: space-between;
 }
+/* flex布局,横向居中 */
 .my-f-jc-c, .my-f-ai-jc-c {
 	justify-content: center;
 }

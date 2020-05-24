@@ -1,0 +1,39 @@
+
+.nav-left>view.data-v-9d718eba, .nav-right>view.data-v-9d718eba {
+	font-size: 35rpx;
+}
+.nav-left>view.data-v-9d718eba {
+	color: #FF6919;
+}
+.nav-left.data-v-9d718eba {
+	margin-left: 16rpx;
+}
+.nav-right.data-v-9d718eba {
+	width: 100%;
+	margin-right: -200rpx;
+}
+.nav-tab-bar.data-v-9d718eba {
+	width: 100%;
+	margin-left: -20rpx;
+}
+.nav-tab-bar>view.data-v-9d718eba {
+	font-size: 30rpx;
+	padding: 0 15rpx;
+	font-weight: bold;
+	color: #969696;
+	position: relative;
+}
+.active.data-v-9d718eba {
+	color: #333333!important;
+}
+/* 标签下的下划线 */
+.nav-tab-bar-line.data-v-9d718eba {
+	border-bottom: 5rpx solid #FEDE33;
+	border-top: 5rpx solid #FEDE33;
+	width: 70rpx;
+	border-radius: 20rpx;
+	position: absolute;
+	bottom: 0rpx;
+	left: 10rpx;
+}
+

@@ -129,7 +129,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexList = function indexList() {return __webpack_require__.e(/*! import() | components/index/index-list */ "components/index/index-list").then(__webpack_require__.bind(null, /*! ../../components/index/index-list.vue */ 43));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | components/swiperTab/swiper-tab-head */ "components/swiperTab/swiper-tab-head").then(__webpack_require__.bind(null, /*! ../../components/swiperTab/swiper-tab-head.vue */ 50));};var pullOnLoad = function pullOnLoad() {return __webpack_require__.e(/*! import() | components/common/pull-on-load */ "components/common/pull-on-load").then(__webpack_require__.bind(null, /*! ../../components/common/pull-on-load.vue */ 57));};var noThing = function noThing() {return __webpack_require__.e(/*! import() | components/common/no-thing */ "components/common/no-thing").then(__webpack_require__.bind(null, /*! ../../components/common/no-thing.vue */ 64));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexList = function indexList() {return __webpack_require__.e(/*! import() | components/index/index-list */ "components/index/index-list").then(__webpack_require__.bind(null, /*! ../../components/index/index-list.vue */ 69));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | components/swiperTab/swiper-tab-head */ "components/swiperTab/swiper-tab-head").then(__webpack_require__.bind(null, /*! ../../components/swiperTab/swiper-tab-head.vue */ 76));};var pullOnLoad = function pullOnLoad() {return __webpack_require__.e(/*! import() | components/common/pull-on-load */ "components/common/pull-on-load").then(__webpack_require__.bind(null, /*! ../../components/common/pull-on-load.vue */ 83));};var noThing = function noThing() {return __webpack_require__.e(/*! import() | components/common/no-thing */ "components/common/no-thing").then(__webpack_require__.bind(null, /*! ../../components/common/no-thing.vue */ 90));};var _default =
+
+
+
+
 
 
 
@@ -176,17 +180,27 @@ __webpack_require__.r(__webpack_exports__);
 {
   // 当页面渲染完成后执行
   onLoad: function onLoad() {var _this = this;
-    console.log('初始化页面~~~~~~');
-    // this.init()
+    // this.init() 官网-->接口
     uni.getSystemInfo({
       success: function success(res) {
+        // 计算视图高度，动态计算高度
+        // res.windowHeight 窗口高度
         var height = res.windowHeight - uni.upx2px(100);
         _this.swiperHeight = height;
       } });
 
   },
+  // 监听搜索框点击事件
+  onNavigationBarSearchInputClicked: function onNavigationBarSearchInputClicked() {
+    // 触发导航栏点击事件后，跳转到搜索页面
+    // 官网->接口->路由
+    uni.navigateTo({ // 保留当前页面，跳转到一个页面
+      url: '../search/search' });
+
+  },
   data: function data() {
     return {
+      // 顶部选项卡下内容的高度，计算得到
       swiperHeight: 0,
       dataList: [],
       swiperList: [
@@ -435,6 +449,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
       tabIndex: 0,
+      // 顶部选项卡内容，从后台传入
       tabBarList: [
       {
         name: '关注',
@@ -469,9 +484,22 @@ __webpack_require__.r(__webpack_exports__);
     pullOnLoad: pullOnLoad,
     noThing: noThing },
 
+  // 监听原生标题导航按钮点击事件, 事件来源介绍：官网-->介绍-->框架简介-->生命周期-->页面生命周期中
+  onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
+    switch (e.index) {
+      case 0: // 左侧的按钮
+        break;
+      case 1: // 右侧按钮
+        uni.navigateTo({
+          url: '../add-input/add-input' });
+
+        break;
+      default:
+        break;}
+
+  },
   methods: {
     init: function init() {
-      console.log('初始化数据----');
       // 从后台获取数据
       this.dataList = [
       {
@@ -512,12 +540,11 @@ __webpack_require__.r(__webpack_exports__);
       }];
 
     },
-    // 点击菜单
+    // 点击事件
     tabTap: function tabTap(index) {
-      console.log('点击index==' + index);
       this.tabIndex = index;
     },
-    // 滑动改变时
+    // 滑动事件
     swiperChange: function swiperChange(e) {
       // 获取当前滑块的下标，改变对应的导航菜单的下标，使之同步改变
       this.tabIndex = e.detail.current;
@@ -532,8 +559,13 @@ __webpack_require__.r(__webpack_exports__);
 
       // 此setTimeOut为模拟向后台发送请求获取数据
       // 注意：setTimeOut(function() {}) 如果使用这种方式，this在function(){}中就会不生效，需要在外面定义一个对象接收this，才可以在里面使用
+      // var _self = this;
+      // setTimeout(function () {
+      // 	_self.swiperList[tabIndex].list.push(data);
+      // }, 1000)
       setTimeout(function () {
 
+        // 数据加载完成
         var data =
         {
           userPic: '../../static/img/index/user.jpg', //  用户图片
@@ -546,7 +578,7 @@ __webpack_require__.r(__webpack_exports__);
           videoPlayNum: '', // 视频播放次数
           videoTime: '', // 视频时长
           dcInfo: { // 点赞踩信息
-            dcType: '1', // 点赞踩类型，0：为操作，1:点赞，2：踩
+            dcType: '0', // 点赞踩类型，0：未操作，1:点赞，2：踩
             dzNum: '22155', // 点赞数
             cNum: '0' // 踩数
           },
@@ -557,11 +589,13 @@ __webpack_require__.r(__webpack_exports__);
         _this2.swiperList[tabIndex].list.push(data);
         _this2.swiperList[tabIndex].loadText = '上拉加载更多';
 
+        // 如果没有数据
+        // this.swiperList[tabIndex].loadText = '没有更多数据了'
       }, 1000);
     },
     // 合并数据
-    mergeData: function mergeData(data, index) {
-      this.swiperList[this.tabIndex].list[index] = data;
+    mergeData: function mergeData(data, index, swIndex) {
+      this.swiperList[swIndex].list[index] = data;
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

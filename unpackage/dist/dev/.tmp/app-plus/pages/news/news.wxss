@@ -1,7 +1,305 @@
 
-.box ._img {
-	width: 100%;
-	border-radius: 20rpx;
-	position: relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 搜索框 */
+.search-input {
+	padding: 20rpx;
 }
+/* 搜索框中的输入框 */
+.search-input input {
+	background: #F4F4F4;
+	border-radius: 10rpx;
+}
+/* 占位符样式 */
+.topic-search {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-size: 28rpx;
+}
+/* 搜索框 */
+/* 轮播图 */
+.topic-swiper {
+	padding: 0 20rpx 20rpx 20rpx;
+}
+/* 轮播图中的图片 */
+.topic-swiper image {
+	width: 100%;
+	border-radius: 10rpx;
+}
+/* 轮播图 */
+
+
 

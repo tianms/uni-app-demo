@@ -1,0 +1,19 @@
+{
+  "enablePullDownRefresh": true,
+  "bounce": "none",
+  "scrollIndicator": "none",
+  "titleNView": {
+    "type": "transparent",
+    "buttons": [
+      {
+        "type": "menu"
+      }
+    ]
+  },
+  "usingComponents": {
+    "topic-info": "/components/topic/topic-info",
+    "swiper-tab-head": "/components/swiperTab/swiper-tab-head",
+    "common-list": "/components/common/common-list",
+    "pull-on-load": "/components/common/pull-on-load"
+  }
+}

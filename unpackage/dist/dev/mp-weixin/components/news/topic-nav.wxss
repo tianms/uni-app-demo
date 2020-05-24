@@ -1,0 +1,34 @@
+
+.topic-nav.data-v-1317c1fe {
+	border-top: 1rpx solid #EEEEEE;
+	border-bottom: 1rpx solid #EEEEEE;
+	padding: 20rpx;
+}
+.topic-nav>view.data-v-1317c1fe:first-child {
+	margin-bottom: 10rpx;
+}
+.topic-nav>view:first-child view.data-v-1317c1fe {
+	color: #9E9E9E;
+}
+/* 热门分类 */
+.topic-nav>view:first-child>view.data-v-1317c1fe:first-child {
+	color: #333333;
+	font-size: 32rpx;
+}
+/* 跟那个多 */
+.topic-nav>view:first-child>view.data-v-1317c1fe:last-child {
+}
+/* 标签 */
+.topic-nav>view.data-v-1317c1fe:last-child {
+}
+/* 每一个分类标签 */
+.topic-nav>view:last-child view.data-v-1317c1fe {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	background: #DDDDDD;
+	color: #9E9E9E;
+	border-radius: 10rpx;
+	margin: 0 10rpx;
+}
+

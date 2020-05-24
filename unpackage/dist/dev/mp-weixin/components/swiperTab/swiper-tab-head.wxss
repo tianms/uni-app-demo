@@ -1,24 +1,24 @@
 
-.uni-tab-bar {
+.uni-tab-bar.data-v-6c2a1433 {
 	border-bottom: 1rpx solid #EEEEEE;
 }
-.swiper-tab-list {
+.swiper-tab-list.data-v-6c2a1433 {
 	font-weight: bold;
 	color: #959394;
 }
 /** 选中的字体颜色改变 */
-.uni-tab-bar .active {
+.uni-tab-bar .active.data-v-6c2a1433 {
 	color: #140D0F;
 }
 /** 选中的标签下方 */
-.active .tab-item-active {
+.active .swiper-tab-line.data-v-6c2a1433 {
 	border-top: 6rpx solid #FDDA30;
 	border-bottom: 6rpx solid #FDDA30;
 	border-radius: 50rpx;
 	width: 80rpx;
 	margin: 0 auto;
 }
-.swiper-box {
+.swiper-box.data-v-6c2a1433 {
 	/* height: 700upx!important; */
 }
 

@@ -1,0 +1,167 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 多行文本样式 */
+.uni-textarea.data-v-7b5a517e {
+	border: 1rpx solid #EEEEEE;
+}
+/* 公告下内容样式 */
+.gonggao.data-v-7b5a517e {
+	padding: 30rpx;
+	border-radius: 15rpx;
+	width: 500rpx;
+	background: #FFFFFF;
+}
+.gonggao image.data-v-7b5a517e {
+	width: 70%;
+	margin-bottom: 20rpx;
+}
+.gonggao button.data-v-7b5a517e {
+	margin-top: 20rpx;
+	background: #FFE934;
+	color: #171606;
+}
+/* 公告下内容样式 */
+

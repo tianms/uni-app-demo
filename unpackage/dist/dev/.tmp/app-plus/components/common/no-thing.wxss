@@ -1,5 +1,6 @@
 
 .no-thing.data-v-05f5c904 {
+	background: #FFFFFF;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -8,6 +9,5 @@
 }
 .no-thing image.data-v-05f5c904 {
 	width: 40%;
-	/* height: 100%; */
 }
 
